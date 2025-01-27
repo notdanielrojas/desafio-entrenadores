@@ -90,7 +90,7 @@ const findPokemonByString = (entrenadores, searchString) => {
       }
     });
   });
-    return result.length > 0 ? result : `No existe un Pokémon con el nombre "${searchString}".`;
+    return result.length > 0 ? result : `Ningún entrenador tiene un Pokemon con el nombre "${searchString}".`;
 };
 };
 

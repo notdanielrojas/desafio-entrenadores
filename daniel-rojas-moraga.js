@@ -90,8 +90,10 @@ const findPokemonByString = (entrenadores, searchString) => {
       }
     });
   });
-  return result;
+    return result.length > 0 ? result : `No existe un Pokémon con el nombre "${searchString}".`;
 };
+};
+
 const pokemonsFound = findPokemonByString(entrenadores, "pika");
 console.log("Pokémon encontrados:", pokemonsFound);
 
